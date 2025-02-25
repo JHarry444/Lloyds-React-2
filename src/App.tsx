@@ -13,10 +13,6 @@ function App() {
         <input className="myClass" />
         <p>2 + 2 = {2 + 2}</p>
         <Input />
-        <Input />
-        {/* comment */}
-        <Input />
-        <Input />
       </section>
     </>
   );

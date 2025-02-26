@@ -1,7 +1,7 @@
 type TrainerProps = {
-    name: string,
-    age: number,
-    specialty: string
+    name: string;
+    age: number;
+    specialty: string;
 }
 
 const Trainer = function ({ name, age, specialty }: TrainerProps) {

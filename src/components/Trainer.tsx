@@ -12,7 +12,7 @@ const Trainer = function ({ name, age, specialty }: TrainerProps) {
         <>
             <p>Name: {name}</p>
             <p>Age: {age}</p>
-            {specialty && <p><p>Specialty: {specialty}</p></p>}
+            {specialty && <p>Specialty: {specialty}</p>}
             {/* {specialty ? <p>Specialty: {specialty}</p> : false} */}
         </>
     )

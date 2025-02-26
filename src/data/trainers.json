@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Jordan",
+        "age": 30,
+        "specialty": "Java",
+        "joined": "01/01/2020"
+    },
+    {
+        "name": "Aswene",
+        "age": 24,
+        "specialty": "PEGA"
+    },
+    {
+        "name": "Piers",
+        "age": 28,
+        "specialty": "DevOps"
+    }
+]

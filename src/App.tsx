@@ -1,4 +1,5 @@
 import Conditional from "./components/Condtional";
+import ExternalData from "./components/ExternalData";
 import Input from "./components/Input";
 import Trainer from "./components/Trainer";
 
@@ -25,6 +26,10 @@ function App() {
       <section>
         <h2>Conditional</h2>
         <Conditional bool />
+      </section>
+      <section>
+        <h2>External Data</h2>
+        <ExternalData />
       </section>
     </>
   );

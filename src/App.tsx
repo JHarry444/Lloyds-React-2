@@ -15,6 +15,8 @@ function App() {
       <header>
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/demo">Demo</Link>
+
           <Link to="/components">Components</Link>
           <Link to="/props">Props</Link>
           <Link to="/conditional">Conditionals</Link>

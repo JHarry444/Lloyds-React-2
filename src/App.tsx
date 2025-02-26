@@ -1,5 +1,6 @@
 import Components from "./components/Components";
 import ConditionalPage from "./components/ConditionalPage";
+import EventHandling from "./components/EventHandling";
 import ExternalDataPage from "./components/ExternalDataPage";
 import Home from "./components/Home";
 import Props from "./components/Props";
@@ -15,12 +16,12 @@ function App() {
       <header>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/demo">Demo</Link>
-
           <Link to="/components">Components</Link>
           <Link to="/props">Props</Link>
           <Link to="/conditional">Conditionals</Link>
           <Link to="/external">Externals</Link>
+          <Link to="/events">Events</Link>
+
         </nav>
       </header>
       <Routes>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/props" element={<Props />} />
         <Route path="/conditional" element={<ConditionalPage />} />
         <Route path="/external" element={<ExternalDataPage />} />
+        <Route path="/events" element={<EventHandling />} />
       </Routes>
 
     </Router>

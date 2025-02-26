@@ -1,3 +1,4 @@
+import Conditional from "./components/Condtional";
 import Input from "./components/Input";
 import Trainer from "./components/Trainer";
 
@@ -11,7 +12,7 @@ function App() {
       <p>Here's my example React Application!</p>
       <section>
         <h2>Components</h2>
-        <input className="myClass" />
+        <input className="myClass" readOnly />
         <p>2 + 2 = {2 + 2}</p>
         <Input />
       </section>
@@ -20,6 +21,10 @@ function App() {
         <Trainer name="Jordan" age={30} specialty="Java" />
         <Trainer name="Cameron" age={32} specialty="JS" />
         <Trainer name="Piers" age={28} specialty="DevOps" />
+      </section>
+      <section>
+        <h2>Conditional</h2>
+        <Conditional bool />
       </section>
     </>
   );

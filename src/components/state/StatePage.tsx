@@ -1,9 +1,15 @@
 import State from "./State";
+import TrainerContainer from "./TrainerContainer";
 
 const StatePage = () => {
     return (
         <>
-            <State />
+            <section>
+                <State />
+            </section>
+            <section>
+                <TrainerContainer />
+            </section>
         </>
     );
 }

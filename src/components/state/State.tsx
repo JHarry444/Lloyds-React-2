@@ -14,7 +14,7 @@ const State = () => {
             <h2>State</h2>
             <input type="number" value={count} readOnly />
             <button onClick={() => {
-                setCount(count + 1);
+                setCount(oldCount => oldCount + 1);
                 console.log(count);
             }}>+1</button>
         </>

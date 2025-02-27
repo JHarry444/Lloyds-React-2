@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Props from "./components/Props";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import StatePage from "./components/state/StatePage";
+import TrainerContainer from "./components/server/TrainerContainer";
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
           <Link to="/external">Externals</Link>
           <Link to="/events">Events</Link>
           <Link to="/state">State</Link>
-
+          <Link to="/fetch">Fetch</Link>
         </nav>
       </header>
       <Routes>
@@ -34,6 +35,8 @@ function App() {
         <Route path="/external" element={<ExternalDataPage />} />
         <Route path="/events" element={<EventHandling />} />
         <Route path="/state" element={<StatePage />} />
+        <Route path="/fetch" element={<TrainerContainer />} />
+
       </Routes>
 
     </Router>

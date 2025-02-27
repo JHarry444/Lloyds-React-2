@@ -1,0 +1,35 @@
+{
+    "trainers": [
+        {
+            "id": "fdfg",
+            "name": "Jordan",
+            "age": 30,
+            "specialty": "Java",
+            "joined": "01/01/2020"
+        },
+        {
+            "id": "sdfgsdgfs",
+            "name": "Aswene",
+            "age": 24,
+            "specialty": "PEGA"
+        },
+        {
+            "id": "ewqrdfsf",
+            "name": "Piers",
+            "age": 28,
+            "specialty": "DevOps"
+        },
+        {
+            "id": "sfdsf",
+            "name": "Cameron",
+            "age": 32,
+            "specialty": "PlayWright"
+        },
+        {
+            "id": "gdgdfg",
+            "name": "Jordan B",
+            "age": 28,
+            "specialty": "Live Something"
+        }
+    ]
+}

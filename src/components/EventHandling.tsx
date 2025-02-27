@@ -1,3 +1,5 @@
+import JSConfetti from 'js-confetti';
+
 const EventHandling = () => {
 
 
@@ -13,6 +15,7 @@ const EventHandling = () => {
             <p>{sum(1, 2)}</p>
             <button onClick={handleClick}>CLICK ME!</button>
             <button onClick={() => alert("yo!")}>CLICK ME!</button>
+            <button onClick={() => new JSConfetti().addConfetti({ emojis: ['⚛️', '⭐'], confettiNumber: 999_999 })}>CLICK ME!</button>
         </>);
 }
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { TrainerType } from "./TrainerContainer";
-
 type TrainerFormProps = {
     setTrainers: React.Dispatch<React.SetStateAction<TrainerType[]>>
 }
@@ -34,19 +33,20 @@ const TrainerForm = ({ setTrainers }: TrainerFormProps) => {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="nameInput">Name</label>
-            <input type="text" name="name" id="nameInput" value={name}
-                onChange={(event) => setName(event.target.value)} />
-            <br />
-            <label htmlFor="ageInput">Age</label>
-            <input type="text" name="age" id="ageInput" value={age} onChange={(event) => setAge(parseInt(event.target.value))} />
-            <br />
-            <label htmlFor="specialtyInput">Specialty</label>
-            <input type="text" name="Specialty" id="specialtyInput" value={specialty} onChange={(event) => setSpecialty(event.target.value)} />
-            <br />
-            <button>Add</button>
-        </form>
+        <>
+            <h2>Add Trainer</h2>
+            <form onSubmit={handleSubmit} className="trainerForm">
+                <label htmlFor="nameInput">Name</label>
+                <input type="text" name="name" id="nameInput" value={name}
+                    onChange={(event) => setName(event.target.value)} />
+                <label htmlFor="ageInput">Age</label>
+                <input type="text" name="age" id="ageInput" value={age} onChange={(event) => setAge(parseInt(event.target.value))} />
+                <label htmlFor="specialtyInput">Specialty</label>
+                <input type="text" name="Specialty" id="specialtyInput" value={specialty} onChange={(event) => setSpecialty(event.target.value)} />
+                <button>Add</button>
+            </form>
+        </>
+
     );
 }
 

@@ -13,6 +13,7 @@ const ListTrainers = ({ trainers }: ListTrainersProps) => {
 
     return (
         <div>
+            <h2>Trainers</h2>
             {
                 trainers.map(({ name, age, specialty }) => <Trainer key={uuidv4()} name={name} age={age} specialty={specialty} />)
             }

@@ -1,0 +1,11 @@
+form.trainerForm {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 100px;
+    column-gap: 10px
+}
+
+div.statePage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ListTrainers from "./ListTrainers";
 import TrainerForm from "./TrainerForm";
+import './state.css';
 
 export type TrainerType = {
     name: string;
@@ -25,15 +26,19 @@ const TrainerContainer = () => {
     ]);
 
     return (
-        <>
+        <div>
             <h2>Lifting State</h2>
-            <div>
-                <TrainerForm setTrainers={setTrainers} />
+
+            <div className="statePage">
+                <div>
+                    <TrainerForm setTrainers={setTrainers} />
+                </div>
+                <div>
+                    <ListTrainers trainers={trainers} />
+                </div>
             </div>
-            <div>
-                <ListTrainers trainers={trainers} />
-            </div>
-        </>);
+        </div>
+    );
 }
 
 export default TrainerContainer;

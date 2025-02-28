@@ -10,6 +10,7 @@ import TrainerContainer from "./components/server/TrainerContainer";
 import { useState } from "react";
 import ThemeContext from "./context/ThemeContext";
 import Theme from "./components/Theme";
+import ChildrenExample from "./components/ChildrenExample";
 function App() {
 
   console.log("Hi from App!");
@@ -31,6 +32,7 @@ function App() {
             <Link to="/state">State</Link>
             <Link to="/fetch">Fetch</Link>
             <Link to="/theme">Theme</Link>
+            <Link to="/children">Children</Link>
           </nav>
           <button onClick={() => setTheme(currentTheme => currentTheme === "light" ? "dark" : "light")}>Toggle</button>
         </header>
@@ -44,6 +46,13 @@ function App() {
           <Route path="/state" element={<StatePage />} />
           <Route path="/fetch" element={<TrainerContainer />} />
           <Route path="/theme" element={<Theme />} />
+          <Route path="/children" element={
+            <ChildrenExample>
+              <p>Hello!</p>
+              <p>We are</p>
+              <p>children!</p>
+            </ChildrenExample>
+          } />
 
         </Routes>
       </ThemeContext.Provider>

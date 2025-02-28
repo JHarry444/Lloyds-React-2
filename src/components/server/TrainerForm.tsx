@@ -28,6 +28,14 @@ const TrainerForm = ({ setTrainers }: TrainerFormProps) => {
             return newArray;
         })
 
+        fetch("http://localhost:8080/trainers", {
+            "method": "POST",
+            "body": JSON.stringify({
+                name, age, specialty
+            })
+        }).then(res => console.log(res))
+            .catch(err => console.error(err));
+
         // setTrainers((trainers: TrainerType[]) => [...trainers, { name, age, specialty }])
     }
 

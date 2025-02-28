@@ -4,7 +4,7 @@ import TrainerForm from "./TrainerForm";
 import axios from "axios";
 
 export type TrainerType = {
-    id: string;
+    id?: string;
     name: string;
     age: number;
     specialty: string;

@@ -11,6 +11,7 @@ const TrainerForm = ({ setTrainers }: TrainerFormProps) => {
     const [age, setAge] = useState(0);
     const [specialty, setSpecialty] = useState("");
 
+
     const handleSubmit = function (event: React.FormEvent) {
         event.preventDefault(); // stops the form from refreshing the page
 

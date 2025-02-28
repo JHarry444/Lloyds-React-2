@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import { TrainerType } from './TrainerContainer';
 
 
@@ -13,7 +12,7 @@ const ListTrainers = ({ trainers }: ListTrainersProps) => {
     return (
         <ul>
             {
-                trainers.map(({ name, age, specialty }) => <li key={uuidv4()}>{`Name: ${name} Age: ${age} Specialty: ${specialty}`}</li>)
+                trainers.map(({ id, name, age, specialty }) => <li key={id}>{`Name: ${name} Age: ${age} Specialty: ${specialty}`}</li>)
             }
         </ul>);
 }

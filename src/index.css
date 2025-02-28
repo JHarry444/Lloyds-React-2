@@ -11,3 +11,13 @@ a {
 a:visited {
   color: red;
 }
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}

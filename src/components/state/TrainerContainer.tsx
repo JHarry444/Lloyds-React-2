@@ -11,7 +11,18 @@ export type TrainerType = {
 
 const TrainerContainer = () => {
 
-    const [trainers, setTrainers] = useState<TrainerType[]>([]);
+    const [trainers, setTrainers] = useState<TrainerType[]>([
+        {
+            name: "Jordan",
+            age: 30,
+            specialty: "Java"
+        },
+        {
+            name: "Cameron",
+            age: 32,
+            specialty: "JS"
+        }
+    ]);
 
     return (
         <>

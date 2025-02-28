@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
+
 type TrainerProps = {
     name: string;
     age: number;
@@ -7,14 +10,15 @@ type TrainerProps = {
 
 const Trainer = function ({ name, age, specialty }: TrainerProps) {
     console.log("age + 2 =", age + 2);
+    const theme = useContext(ThemeContext);
 
     return (
-        <>
+        <div className={theme}>
             <p>Name: {name}</p>
             <p>Age: {age}</p>
             {specialty && <p>Specialty: {specialty}</p>}
             {/* {specialty ? <p>Specialty: {specialty}</p> : false} */}
-        </>
+        </div>
     )
 }
 
